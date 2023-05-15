@@ -73,7 +73,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum, "any")
 const safe = createSafe( provider.getSigner() )
 
 // Sending 0.1 ETH to Vitalk 
-cosnt tx = await safe.sendTransaction({
+const tx = await safe.sendTransaction({
     to: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
     value: 1e18,
     chainId: 1
@@ -95,7 +95,7 @@ const safe = createSafe( provider.getSigner() )
 const referralAddress = "0x_____" // Default: "0x000000000000000000000000000000000000Cad0" // If Source address is passed, then 10% of the transaction fee shared with referral address. 
 
 // Sending 0.1 ETH to Vitalk 
-cosnt tx = await safe.sendTransaction({
+const tx = await safe.sendTransaction({
     to: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
     value: 1e18,
     chainId: 1
