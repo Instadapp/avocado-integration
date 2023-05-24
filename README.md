@@ -82,6 +82,8 @@ const tx = await safe.sendTransaction({
 
 Note: The underlying `chainId` can be included with the transaction data.
 
+> This will trigger the user to sign a EIP-712 based tx message data, which is then used to execute the actions on the chain via the Avocado network
+
 ## Send Transaction to Avocado (Reveune Sharing Program):
 
 ```javascript
