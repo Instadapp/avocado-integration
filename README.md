@@ -143,9 +143,9 @@ const provider = new ethers.providers.Web3Provider(window.ethereum, "any")
 
 const safe = createSafe(provider.getSigner())
 
-const safeOwner = await safe.getOwnerAddress()
+const safeAddress = await await safe.getSafeAddress()
 
-const usdcGasBalance = await provider.getBalance(safeOwner)
+const usdcGasBalance = await provider.getBalance(safeAddress)
 ```
 
 Additional Examples: https://github.com/Instadapp/avocado-sdk#examples
